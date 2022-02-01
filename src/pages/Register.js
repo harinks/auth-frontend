@@ -17,7 +17,7 @@ function Register() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post("https://localhost:3000/register", values)
+                await axios.post("https://localhost:3001/register", values)
                 navigate("/")
             } catch (error) {
                 console.log(error)
